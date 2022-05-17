@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="csstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+
+<header>
+
+  <nav>
+
+    <img src="images/logo2.0.png" width="150" height="150"alt="Museo">
+    <div class="menu">
+      <a href="#" style="font-size: ">Chi siamo</a>
+      <a href="tariffario.html">Tariffario</a>
+      <a href="sale.html">Sale</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="area%20riservata.html">Area Riservata</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <body>
+  <h1>Student Registaration Form</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-10">
+        <label for="fname">Nome:</label>
+      </div>
+      <div class="col-90">
+        <input type="text" id="fname" name="firstname" placeholder="Inserisci il tuo nome">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10">
+        <label for="lname">Cognome:</label>
+      </div>
+      <div class="col-90">
+        <input type="text" id="lname" name="lastname" placeholder="Inserisci il tuo cognome">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        <label for="mobile">Telefono:</label>
+      </div>
+      <div class="col-90">
+        <input type="tel" id="mobile" name="mobile" >
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        <label for="dob">Seleziona la data:</label>
+      </div>
+      <div class="col-90">
+        <input type="Date" id="dob" name="dob">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-10">
+        <label for="mobile">Digita l'orario:</label>
+      </div>
+      <div class="col-90">
+        <input type="tel" id="mobile" name="mobile">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10">
+        <label for="pincode">Numero di persone:</label>
+      </div>
+      <div class="col-90">
+        <input type="number" id="pin" name="pin" maxlength="6">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-10">
+        <label for="qualification" required >Scegli la tariffa:</label>
+      </div>
+      <div class="col-90">
+        <select name="qualification" id="qualification">
+          <option value=" ">Seleziona la tariffa:</option>
+          <option value="Graduation">Standard</option>
+          <option value="BTech.">Ridotta</option>
+
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Registered" onclick="SaveStudentDetails()">
+    </div>
+  </div>
+  </body>
+</html>
