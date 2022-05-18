@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="csstyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+
+<header>
+
+  <nav>
+
+    <img src="images/logo2.0.png" width="150" height="150"alt="Museo">
+    <div class="menu">
+      <a href="chi%20siamo.html" style="font-size: ">Chi siamo</a>
+      <a href="tariffario.html">Tariffario</a>
+      <a href="sale.html">Sale</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="area%20riservata.html">Area Riservata</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+<div class="search">
+  <input class="srch" type="search" name="" placeholder="Codice dispositivo">
+</div>
+  <button class="btn_searchdisp" onclick="toggleContent()" id="button1">Cerca</button>
+  <script>
+    function start() {
+      let button1 = document.getElementById("button1");
+      button1.onclick = toggleContent;
+      document.getElementById("Hector").style.visibility = "hidden";
+    }
+
+    function toggleContent() {
+      let number = +document.getElementById('number').value; // take value as a number
+      let liquid = document.getElementById('Hector');
+
+      if (isNaN(number) || number < 0) { // move exit condition to top and exit early
+        alert("Invalid Entry. Enter a Number.")
+        return;
+      }
+
+      if (number <= 20) { // condition without parseint
+
+      } else { // no need for another check
+        liquid.src = 'assets/logo.PNG';
+        liquid.alt = 'assets/hector.jpg';
+      }
+    }
+
+    window.onload = start;
+
+
+  </script>
+
+
+  <div id="main-header">
+    <img id="Hector" src="images/Piantina%20museo.jpg" alt="" >
+
+  </div>
+</header>
